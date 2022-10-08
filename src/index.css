@@ -1,13 +1,54 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+body, html, *, *::before, *::after, :host, :root {
+  word-wrap: break-word;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+body {
+    position: fixed;
+    z-index: 1;
+    inset: 0;
+}
+body,
+html {
+    background-color: #010409;
+    color: #fff;
+}
+.scrollable {
+  overflow: auto;
+}
+.scrollable-x {
+  overflow-x: auto;
+}
+.scrollable-y {
+  overflow-y: auto;
+}
+.scrollable:not(.mobile)::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.scrollable:not(.mobile)::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #010409;
+}
+.scrollable:not(.mobile)::-webkit-scrollbar-thumb {
+    background-color: #0d1117;
+    outline: 1px solid #0d1117;
+}
+.scrollable:not(.mobile)::-webkit-scrollbar-corner {
+    background: none;
+}
+#root {
+  display: flex;
+  position: absolute;
+  inset: 0;
+  flex-direction: row;
 }
