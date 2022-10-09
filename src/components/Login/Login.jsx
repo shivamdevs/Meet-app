@@ -1,10 +1,10 @@
 import css from './Login.module.css';
 import base from './../Base.module.css';
 import React from 'react';
-import { Input } from '../Elements/Elements';
+import { Input, InputCheck } from '../Elements/Elements';
 
-import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css';
+// import Tippy from '@tippyjs/react';
+// import 'tippy.js/dist/tippy.css';
 
 function Login() {
     return (
@@ -13,14 +13,23 @@ function Login() {
                 
             </div>
             <div className={css.login}>
-                <Tippy content="Google Meet">
-                    <div className={`${base.logo} ${base.s28}`}>Meet</div>
-                </Tippy>
-                <p className={base.para}>Sign in to your Account to continue.</p>
+                <div className={`${base.logo} ${base.s28}`}>Meet</div>
+                <div className={base.para}>Sign in to your Account to continue.</div>
                 <form className={css.form}>
                     <Input
-                        label="Username or Email"
+                        label="Username or email"
                         type="text"
+                        icon="far fa-fw fa-user"
+                    />
+                    <Input
+                        label="Password"
+                        type="password"
+                        icon="far fa-fw fa-key"
+                    />
+                    <InputCheck
+                        label="Show password"
+                        keep="right"
+                        type="checkbox"
                     />
                 </form>
             </div>

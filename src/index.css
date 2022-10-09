@@ -23,6 +23,11 @@ html {
   background-color: #010409;
   color: #fff;
 }
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
 .scrollable {
   overflow: auto;
 }
