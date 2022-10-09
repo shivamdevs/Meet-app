@@ -1,0 +1,19 @@
+.box {
+    padding: 20px 0;
+}
+.intro,
+.login {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.intro {
+    border-right: 1px solid #6b728077;
+}
+.form {
+    width: 100%;
+    max-width: 500px;
+}

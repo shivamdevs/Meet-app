@@ -1,0 +1,17 @@
+.group {
+    margin: 10px auto;
+    width: 100%;
+}
+.input {
+    width: 100%;
+    height: 50px;
+}
+body .input {
+    --color: red;
+}
+body.dark .input {
+    --color: blue;
+}
+.input {
+    background: var(--color);
+}

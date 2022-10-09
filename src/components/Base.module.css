@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+.container.column {
+    flex-direction: column;
+}
+.logo {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.logo.s28 {
+    font-size: 28px;
+    font-weight: 600;
+}
+.para {
+    color: #6b7280;
+}
