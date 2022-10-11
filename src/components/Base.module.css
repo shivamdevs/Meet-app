@@ -18,3 +18,32 @@
 .para {
     color: #6b7280;
 }
+.button {
+    border: none;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.4;
+    border-radius: 4px;
+    padding: 10px 15px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    transition: .1s ease;
+    padding: 10px 19px;
+    font-size: 17px;
+    line-height: 1.471;
+    white-space: normal;
+    border-radius: 6px;
+    flex: 1;
+    max-width: 15em;
+    cursor: pointer;
+}
+.link {
+    color: #4ba5ff;
+    text-decoration: none;
+}
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.link:active {
+    user-select: none;
+}

@@ -1,12 +1,12 @@
 import css from './App.module.css';
 import React from 'react';
-import Login from './components/Login/Login';
+import Auth from './components/Account/Auth';
 
 function App() {
   return (
     <div className={css.root}>
       <main className={css.main}>
-        <Login></Login>
+        <Auth></Auth>
       </main>
     </div>
   );

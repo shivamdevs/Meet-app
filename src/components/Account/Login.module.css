@@ -1,0 +1,41 @@
+/* .box {
+    padding: 20px 0;
+} */
+.section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.section:last-child {
+    max-width: 600px;
+}
+/* .atright {
+    border-right: 1px solid #30363d;
+}
+.atleft {
+    border-left: 1px solid #30363d;
+} */
+.form {
+    width: 100%;
+    padding: 20px 0;
+}
+.login .form {
+    max-width: 400px;
+}
+.button {
+    color: #fff;
+    background-color: #34495e;
+    margin: 10px auto;
+}
+.button:hover {
+    color: #fff;
+    background-color: #415b76;
+    border-color: #415b76;
+}
+.button:not(:disabled):not(.disabled):active {
+    background: #2c3e50;
+    border-color: #2c3e50;
+}

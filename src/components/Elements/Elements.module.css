@@ -1,6 +1,8 @@
 .formgroup {
-    margin: 20px auto;
+    margin: 10px auto;
     width: 100%;
+    flex-direction: column;
+    padding: 10px;
 }
 .formgroup {
     --bgc: #0d1117;
@@ -74,6 +76,7 @@
 .input {
     flex: 1;
     height: 100%;
+    min-width: 0;
     background-color: transparent;
     border: none;
     outline: none;
@@ -81,17 +84,19 @@
     padding: 0 15px;
     transition: .1s ease;
 }
-.inputbox > span {
-    min-width: 35px;
+.icon,
+.info {
+    min-width: 30px;
     display: inline-flex;
     align-items: center;
     font-size: 20px;
+    justify-content: center;
 }
 .icon {
-    justify-content: flex-end;
+    margin-left: 10px;
 }
 .info {
-    justify-content: flex-start;
+    margin-right: 10px;
 }
 .throw {
     padding: 4px 2px 8px;
@@ -181,6 +186,26 @@
 }
 .checklabel.checked .checkbox > svg {
     stroke-dashoffset: 0;
+}
+.checktext {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.checktext > .checkdata {
+    display: inline-block;
+    text-align: left;
+    word-wrap: break-word;
+    padding: 0 6px;
+}
+.checklabel.keepleft,
+.checklabel.keepleft .checktext {
+    display: flex;
+    width: 100%;
+}
+.checklabel.keepleft .checktext > .checkdata {
+    margin-right: auto;
 }
 @keyframes elements_inputcheck_checkbox_checkbox_checked_wave {
     50% {

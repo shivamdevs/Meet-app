@@ -57,7 +57,7 @@ input, button, select, textarea {
   inset: 0;
   flex-direction: row;
 }
-.tippy-box {
+/* .tippy-box {
   font-family: inherit !important;
   color: #fff !important;
   background-color: #3e55e1 !important;
@@ -65,4 +65,4 @@ input, button, select, textarea {
 }
 .tippy-arrow{
   color: #3e55e1 !important;
-}
+} */
