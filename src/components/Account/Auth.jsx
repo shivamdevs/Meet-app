@@ -1,7 +1,7 @@
-import css from './Login.module.css';
+import css from './Auth.module.css';
 import base from './../Base.module.css';
 import './../Package.css';
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Input, InputCheck } from '../Elements/Elements';
 
 // import Tippy from '@tippyjs/react';
@@ -52,18 +52,17 @@ function Login(props) {
     );
 }
 function Register(props) {
-    const userinput = useRef(null);
-    const handleUsers = (event) => {
-        const val = event.target.value;
-        userinput.current.removeAttribute('error');
-        userinput.current.removeAttribute('finish');
-        if (val.length < 5) {
-            userinput.current.setAttribute('error', '');
-            userinput.current.setAttribute('throw', 'Username must contain 5 characters');
-        }
-    };
+    // const handleUsers = (event) => {
+    //     const val = event.target.value;
+    //     userinput.current.removeAttribute('error');
+    //     userinput.current.removeAttribute('finish');
+    //     if (val.length < 5) {
+    //         userinput.current.setAttribute('error', '');
+    //         userinput.current.setAttribute('throw', 'Username must contain 5 characters');
+    //     }
+    // };
     return (
-        <div className={`${base.container} ${css.box}`}>
+        <div className={`${base.container} ${css.box} scrollable`}>
             <div className={`${css.section} ${css.register}`}>
                 <div className={`${base.logo} ${base.s28}`}>Connect</div>
                 <div className={base.para}>Create an Account to continue.</div>
@@ -84,8 +83,6 @@ function Register(props) {
                             label="Create username"
                             type="text"
                             icon="far fa-user"
-                            onInput={handleUsers}
-                            ref={userinput}
                             info={<span>Usernames are unique to each user.<br />Contain only letters, numbers, - and _.<br />Start with letter and end with letter or number.<br />Length should be between 5 - 15 characters.</span>}
                         />
                         <div className="flex-row-break">
@@ -93,15 +90,18 @@ function Register(props) {
                                 label="Create password"
                                 type="password"
                                 className={css.inline}
-                                info={<span>Usernames are unique to each user.<br />Contain only letters, numbers, - and _.<br />Start with letter and end with letter or number.<br />Length should be between 5 - 15 characters.</span>}
                             />
                             <Input
                                 label="Confirm password"
                                 type="password"
                                 className={css.inline}
-                                info={<span>Usernames are unique to each user.<br />Contain only letters, numbers, - and _.<br />Start with letter and end with letter or number.<br />Length should be between 5 - 15 characters.</span>}
                             />
                         </div>
+                        <InputCheck
+                            label="Show password"
+                            keep="left"
+                            type="checkbox"
+                        />
                     <div className="justify-center">
                         <button type="submit" className={`${base.button} ${css.button}`}>Sign in</button>
                     </div>

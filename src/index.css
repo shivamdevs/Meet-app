@@ -41,12 +41,12 @@ input, button, select, textarea {
   width: 10px;
   height: 10px;
 }
-.scrollable:not(.mobile)::-webkit-scrollbar-track {
+/* .scrollable:not(.mobile)::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px #010409;
-}
+} */
 .scrollable:not(.mobile)::-webkit-scrollbar-thumb {
-  background-color: #0d1117;
-  outline: 1px solid #0d1117;
+  background-color: #fff3;
+  outline: 1px solid #fff3;
 }
 .scrollable:not(.mobile)::-webkit-scrollbar-corner {
   background: none;

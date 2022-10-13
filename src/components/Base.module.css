@@ -2,6 +2,8 @@
     display: flex;
     flex: 1;
     flex-direction: row;
+    align-items: stretch;
+    padding: 20px;
 }
 .container.column {
     flex-direction: column;
